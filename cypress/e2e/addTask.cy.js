@@ -1,3 +1,5 @@
+import '../support/commands';
+
 describe('Criação de lembretes rápidos por uma mãe durante as tarefas domésticas', () => {
   beforeEach(() => {
     cy.visit('/');
@@ -60,12 +62,6 @@ describe('Criação de lembretes rápidos por uma mãe durante as tarefas domés
   });
 
   after(() => {
-    cy.get('ul li').then(($items) => {
-      if ($items.length) {
-        cy.wrap($items).each(($el) => {
-          cy.wrap($el).find('button').click({ force: true });
-        });
-      }
-    });
+    cy.deleteAllTasks();
   });
 });

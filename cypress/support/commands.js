@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// Limpa todas as tarefas antes de iniciar os testes
+Cypress.Commands.add('deleteAllTasks', () => {
+    cy.get('ul li').then(($items) => {
+    console.log(`Found ${$items.length} tasks to delete`);
+      if ($items.length) {
+        cy.wrap($items).each(($el) => {
+          cy.wrap($el).find('button').click({ force: true });
+          cy.contains($el.text()).should('not.exist');
+        });
+      }
+    });
+});
