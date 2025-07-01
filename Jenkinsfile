@@ -3,7 +3,9 @@ pipeline {
 
     stages {
         stage('E2E testing') {
-            echo 'Running E2E tests...'
+            steps {
+                echo 'Running E2E tests...'
+            }
         }
     }
 
