@@ -1,2 +1,2 @@
 # força o Git a usar line endings LF sempre, independente do sistema operacional local
-* text=auto eol=lf
+# * text=auto eol=lf
