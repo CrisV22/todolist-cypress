@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Running E2E tests...'
                 sh 'dir'
-                // sh 'npm install'
+                sh 'npm install'
                 // sh 'npx cypress run'
             }
         }
