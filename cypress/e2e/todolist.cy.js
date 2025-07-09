@@ -1,46 +1,46 @@
 import '../support/commands';
 
-describe('Criação de lembretes rápidos por uma mãe durante as tarefas domésticas', () => {
+describe('Quick reminder creation by a mother during household chores', () => {
   beforeEach(() => {
     cy.visit('/');
   });
 
-  it('Deve permitir adicionar a tarefa "Ligar para o pediatra" com sucesso', () => {
-    // Preenche o campo de nova tarefa com o lembrete
+  it('Should allow adding the task "Call the pediatrician" successfully', () => {
+    // Fill in the new task field with the reminder
     cy.get('#nome-todo')
       .should('be.visible')
-      .type('Ligar para o pediatra');
+      .type('Call the pediatrician');
 
-    // Clica no botão de adicionar
+    // Click the add button
     cy.get('#add-button')
       .should('be.enabled')
       .click();
 
-    // Verifica se a tarefa foi adicionada corretamente
-    cy.contains('Ligar para o pediatra')
+    // Check if the task was added correctly
+    cy.contains('Call the pediatrician')
       .should('exist')
       .and('be.visible');
   });
 
-  it('Deve permitir excluir uma tarefa adicionada por engano', () => {
-    // Preenche o campo de nova tarefa com o lembrete
+  it('Should allow deleting a task added by mistake', () => {
+    // Fill in the new task field with the reminder
     cy.get('#nome-todo')
       .type('*@%$');
 
-    // Clica no botão de adicionar
+    // Click the add button
     cy.get('#add-button')
       .should('be.enabled')
       .click();
 
-    // Aguardando adição da tarefa
+    // Wait for the task to be added
     cy.contains('*@%$')
       .should('exist');
 
-    // Exclui a tarefa
+    // Delete the task
     cy.get('[aria-label="Excluir *@%$"]')
       .click();
 
-    // Verifica se foi removida
+    // Check if it was removed
     cy.contains('*@%$')
       .should('not.exist');
   });
