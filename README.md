@@ -1,4 +1,6 @@
-## 📑 Documentação de Testes
+## 📑 Test Documentation
 
-Todos os cenários, casos de teste e técnicas aplicadas estão descritos em:  
-➡️ [`docs/testware-todolist.md`](docs/testware-todolist.md)
+All scenarios, test cases and techniques are described in:
+➡️ [`docs/testware-todolist-pt.md`](docs/testware-todolist-pt.md)
+
+➡️ [`docs/testware-todolist-eng.md`](docs/testware-todolist-eng.md)
