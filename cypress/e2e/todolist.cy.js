@@ -6,6 +6,8 @@ describe('Quick reminder creation by a mother during household chores', () => {
   });
 
   it('Should allow adding the task "Call the pediatrician" successfully', () => {
+    const allure = Cypress.Allure.reporter.getInterface();
+    allure.severity('blocker');
     // Fill in the new task field with the reminder
     cy.get('#nome-todo')
       .should('be.visible')
@@ -23,6 +25,8 @@ describe('Quick reminder creation by a mother during household chores', () => {
   });
 
   it('Should allow deleting a task added by mistake', () => {
+    const allure = Cypress.Allure.reporter.getInterface();
+    allure.severity('critical');
     // Fill in the new task field with the reminder
     cy.get('#nome-todo')
       .type('*@%$');
