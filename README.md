@@ -11,13 +11,15 @@ Use Socratic questioning throughout the process, but do not show the questions u
 Show only the results unless otherwise requested.
 
 Feature: Task List
-    Description: 
-        The screen contains a text field to fill in and a button to add the item.
+
+Description: The screen contains a text field to fill in and a button to add the item.
         There is also a delete button for deleted items.
         There is currently no option to update the title of a task.
 
 Type of test to be performed: Functional - ISO 25010 + Smoke test.
+
 Artifacts:
+
     Test scenario using storytelling
         Format:
             Do not tell a story here, but create a test case that considers the reality of the end user, guiding QA to think and act as the end user.
