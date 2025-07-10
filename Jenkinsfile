@@ -5,7 +5,6 @@ pipeline {
         stage('E2E testing') {
             steps {
                 echo 'Running E2E tests...'
-                bat 'dir'
                 bat 'npm install'
                 bat 'npx cypress run'
             }
