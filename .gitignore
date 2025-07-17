@@ -17,5 +17,6 @@ cypress/downloads
 allure-results
 allure-report
 
-.env
+
 notes.txt
+.env
