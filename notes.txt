@@ -1,6 +1,0 @@
-set -a && source .env && set +a && curl -v "$DEV"
-set -a - automatically export variables from now on
-source .env - loads .env variables
-set +a - undo set -a command
-curl -v "$DEV" - calling variable
-
