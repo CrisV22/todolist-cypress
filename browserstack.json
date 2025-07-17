@@ -1,0 +1,15 @@
+{
+  "auth": {
+    "username": "cristianvitor_n17GCw",
+    "access_key": "7NTbHsxAPaddXCURfZof"
+  },
+  "run_settings": {
+    "cypress_config_file": "./cypress.config.js"
+  },
+  "testObservability": true,
+  "browserstackAutomation": false,
+  "testObservabilityOptions": {
+    "projectName": "Todolist",
+    "buildName": "BrowserStack"
+  }
+}
