@@ -16,3 +16,6 @@ cypress/downloads
 /node_modules
 allure-results
 allure-report
+
+.env
+notes.txt
