@@ -1,11 +1,11 @@
 import '../support/commands';
 
-describe('Quick reminder creation by a mother during household chores', () => {
+describe('Quick reminder creation by a mother during household chores @S4068ba9d', () => {
   beforeEach(() => {
     cy.visit('/');
   });
 
-  it('Should allow adding the task "Call the pediatrician" successfully', () => {
+  it('Should allow adding the task "Call the pediatrician" successfully @Tf3c6c963', () => {
     // Fill in the new task field with the reminder
     cy.get('#nome-todo')
       .should('be.visible')
@@ -22,7 +22,7 @@ describe('Quick reminder creation by a mother during household chores', () => {
       .and('be.visible');
   });
 
-  it('Should allow deleting a task added by mistake', () => {
+  it('Should allow deleting a task added by mistake @Tcd5458d2', () => {
     // Fill in the new task field with the reminder
     cy.get('#nome-todo')
       .type('*@%$');
