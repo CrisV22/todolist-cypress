@@ -6,9 +6,7 @@ module.exports = defineConfig({
       // testomat.io reporter plugin:
       require('@testomatio/reporter/lib/adapter/cypress-plugin')(on, config);
     },
-    // baseUrl: "http://frontend:5173",
     baseUrl: "http://localhost:5173/",
-    // baseUrl: "http://localhost:3000/",
     supportFile: false,
     specPattern: "cypress/e2e/**/*.cy.js",
     screenshotOnRunFailure: false,
