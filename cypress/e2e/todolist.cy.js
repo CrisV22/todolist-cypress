@@ -24,7 +24,7 @@ describe('Quick reminder creation by a mother during household chores @S4068ba9d
 
   it('Should allow deleting a task added by mistake @Tcd5458d2', () => {
     // Fill in the new task field with the reminder
-    cy.get('#nome-todo')
+    cy.get('#nome-tdo')
       .type('*@%$');
 
     // Click the add button
